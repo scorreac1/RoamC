@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Italianno&display=swap');
+
+
+:root {
+    --strong-blue: #00BCD4;
+    --yellow: #FFD700;
+    --bone-white: #F5F5F5;
+    --red-wine: #7A2F34;
+    --dark-green: #9D9E6B;
+}
+
+* {
+    width: 100vw;
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: #000000
+}
+
+
+.intro-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)), 
+    url('../img/fishing-bw.jpg');
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    aspect-ratio: 16/9;
+    position: relative;
+}
+
+.image-text {
+    font-family: 'Italianno';
+    color: var(--bone-white);
+    font-size: 45px;
+    font-weight: 400;
+    width: fit-content;
+    text-align: left;
+    top: 40%;
+    right: 5%;
+    position: absolute;
+}
+
+.intro-whale-watching {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)), 
+    url('../img/whale-jumping.jpeg');
+    background-size: cover; 
+    background-position-y: 0%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    aspect-ratio: 16/9;
+    position: relative;
+}
+
+.image-text-whale {
+    font-family: 'Italianno';
+    color: var(--bone-white);
+    font-size: 45px;
+    font-weight: 400;
+    width: fit-content;
+    text-align: left;
+    top: 30%;
+}
+
+.intro-diving{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)), 
+    url('../img/gorgona-diving.jpeg');
+    background-size: cover; 
+    background-position-y: 0%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    aspect-ratio: 16/9;
+    position: relative;
+}
+
+
+.intro-bird {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)), 
+    url('../img/bird-intro.jpg');
+    background-size: cover; 
+    background-position-y: 0%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    aspect-ratio: 16/9;
+    position: relative;
+}
+
+.image-text-bird {
+    font-family: 'Italianno';
+    color: var(--bone-white);
+    width: 35%;
+    font-size: 45px;
+    font-weight: 400;
+    text-align: left;
+    position: absolute;
+    top: 27%;
+    left: 2%;
+}
+
+.booknow {
+    width: fit-content;
+    text-decoration: none;
+    border: 3px solid var(--yellow);
+    background-color: var(--yellow);
+    border-radius: 7px;
+    font-size: 35px;
+    padding: 3px;
+    color: #000000;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+
+h1 {
+    color: var(--yellow);
+    padding: 30px;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Poppins', cursive;
+}
+
+h2 {
+    margin: 0px 0px;
+    text-align: center;
+    font-family: 'Poppins', cursive;
+    font-size: 50px;
+    color: var(--yellow);
+}
+
+h3 {
+    font-family: 'Italianno', cursive;
+    font-size: 50px;
+    color: var(--yellow);
+    margin-left: 30px;
+}
+
+.info-mapa {
+    width: 90%;
+    margin: 5%;
+    color: var(--bone-white);
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+
+.iframe-map-container {
+    width: 32%;
+}
+
+.google-map-bahia-solano {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.texto-bahia {
+    width: 50%;
+    color: #000000;
+}
+
+/* -------- CARRUSEL--------- */
+.carrusel {
+    display: flex;
+    overflow: scroll;
+    gap: 0;
+    width: 100%;
+    height: 600px;
+    border-top: 4px solid var(--strong-blue);
+    border-bottom: 4px solid var(--strong-blue);
+    margin-top: 20px;
+}
+
+.carrusel-diving {
+    display: flex;
+    overflow: scroll;
+    gap: 0;
+    width: 100%;
+    height: 600px;
+    border-top: 4px solid var(--strong-blue);
+    border-bottom: 4px solid var(--strong-blue);
+    margin-top: 20px;
+}
+
+.carrusel-bird {
+    display: flex;
+    overflow: scroll;
+    gap: 0;
+    width: 100%;
+    height: 600px;
+    border-top: 4px solid var(--strong-blue);
+    border-bottom: 4px solid var(--strong-blue);
+    margin-top: 20px;
+}
+
+
+.photo {
+    width: 450px;
+    height: 600px;
+}
+
+.photo-diving {
+    width: 520px;
+    height: 600px;
+}
+
+.photo-bird {
+    width: 873px;
+    height: 600px;
+}
+
+.photohorizontal,
+.photohorizontal1 {
+    width: auto;
+    height: 600px;
+}
+
+/* -------- CARRUSEL--------- */
+
+
+.included-fish {
+    font-size: 24px;
+    width: 90%;
+    margin: 5%;
+    color:  #000000;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.included-fish .included {
+    width: 45%;
+}
+.included-fish .included h2{
+    width: 100%;
+}
+.included-fish .fish {
+    width: 45%;
+}
+.included-fish .fish h2 {
+    width: 100%;
+}
+
+.included-fish .included ul,  
+.included-fish .included li{
+    width: 100%;
+}
+.included-fish .fish ul,  
+.included-fish .fish li{
+    width: 100%;
+}
+
+.lodging {
+    width: 85%;
+    margin: 5% 5% 0% 5%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    /* min-height: 80vh; */
+}
+
+.lodging .hotel {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    text-decoration: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-image: url('../img/solana.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    transition: 1s;
+    border: 2px solid var(--strong-blue);
+}
+
+.hotel:hover {
+    animation:blur-in 0.5s linear both;
+    transform: scale(1.1);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 4px solid var(--yellow);
+}
+
+.readmore {
+    margin-left: 2px;
+    width: fit-content;
+    border: 3px solid var(--yellow);
+    background-color: var(--yellow);
+    color: #000000;
+}
+
+
+/* ---------- big monitor -----------*/
+@media (min-width: 2500px) {
+    h1 {
+        padding: 15px;
+        font-size: 250px;
+    }
+    
+    h2 {
+        font-size: 200px;
+    }
+
+    h3 {
+        font-size: 150px;
+    }
+    .texto-bahia {
+        font-size: 40px;
+    }
+
+    .readmore {
+        margin-left: 2px;
+        font-size: 40px;
+        width: fit-content;
+    }
+
+    .included-fish {
+        font-size: 40px;
+        color: #000000;
+    }
+
+    .image-text {
+        font-size: 130px;
+        top: 40%;
+        right: 5%;
+    }
+
+    .image-text-whale {
+        font-family: 'Italianno';
+        color: var(--bone-white);
+        font-size: 130px;
+        font-weight: 400;
+        width: fit-content;
+        text-align: left;
+        top: 30%;
+    }
+
+    .image-text-bird {
+        width: 35%;
+        font-size: 130px;
+    }
+
+    .intro-bird h1 {
+        font-size: 200px;
+    }
+     
+    .included-fish .included h2{
+        font-size: 120px;
+        
+    }
+    .included-fish .fish h2{
+        font-size: 120px;
+    }
+
+    /* -------- CARRUSEL--------- */
+    .carrusel {
+        height: 1200px;
+    }
+
+    .photo {
+        width: 900px;
+        height: 1200px;
+    }
+
+    .photohorizontal {
+            width: auto;
+            height: 1200px;
+    }
+
+    .photohorizontal1 {
+        width: auto;
+        height: 1200px;
+    }  
+
+    .carrusel-diving {
+        height: 1200px;
+    }
+    
+    .photo-diving {
+        width: 1040px;
+        height: 1200px;
+    }
+
+    .carrusel-bird {
+        height: 1200px;
+    }
+    
+    .photo-bird {
+        width: 1746px;
+        height: 1200px;
+    }
+}
+/* -------- CARRUSEL--------- */
+
+
+
+
+/* ------------- tablet ------------- */
+@media (max-width: 768px) {
+    h1 {
+        padding: 15px;
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .image-text-whale {
+        width: 35%;
+        font-size: 35px;
+        font-weight: 400;
+        position: absolute;
+        top: 35%;
+        left: 2%;
+    }
+
+    .info-mapa {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .iframe-map-container {
+        width: 50%;
+        align-self: center;
+    }
+
+    .google-map-bahia-solano {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        left: 0;
+        top: 0;
+    }
+
+    .texto-bahia {
+        margin-top: 20px;
+        width: 100%;
+        font-size: 15px;
+        align-self: center;
+    }
+
+    .included-fish {
+        font-size: 18px;
+        color: #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .included-fish .included {
+        width: 80%;
+        text-align: justify;
+    }
+    .included-fish .fish {
+        width: 80%;
+    }
+
+    .picture {
+        text-align: center;
+    }
+
+    .photohorizontal {
+        width: 900px;
+        height: 600px;
+    }
+    .photohorizontal1 {
+        width: 900px;
+        height: 600px;
+    }
+
+}
+
+
+/* ------------- cellphone ------------- */
+@media (max-width: 390px) {
+    h1 {
+        padding: 10px;
+        font-size: 30px;
+    }
+
+    .intro-whale-watching h1 {
+        font-size: 25px;
+    }
+
+    .iframe-map-container {
+        width: 100%;
+        align-self: center;
+    }
+
+    .intro-image {
+        aspect-ratio: 4/3;
+    }
+    
+    .image-text {
+        font-size: 30px;
+        font-weight: 400;
+        width: fit-content;
+        top: 40%;
+        right: 5%; 
+        position: absolute;
+    }
+
+    .image-text-whale {
+        width: 35%;
+        font-size: 22px;
+        top: 27%;
+        left: 2%;
+    }
+
+    .image-text-bird {
+        width: 35%;
+        font-size: 20px;
+        top: 35%
+    }
+
+    .intro-bird h1 {
+        font-size: 20px;
+    }
+    
+    .booknow {
+        width: fit-content;
+        border: 3px solid var(--yellow);
+        background-color: var(--yellow);
+        border-radius: 5px;
+        font-size: 25px;
+    }
+
+    .included-fish {
+        font-size: 18px;
+        color: #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .carrusel-diving {
+        height: 450px;
+    }
+    
+    .photo-diving {
+        width: 390px;
+        height: 450px;
+    }
+
+    .carrusel-bird {
+        height: 260px;
+    }
+    
+    .photo-bird {
+        width: 390px;
+        height: 260px;
+    }
+
+    .included-fish .included {
+        width: 80%;
+        text-align: justify;
+        
+    }
+    .included-fish .included h2{
+        font-size: 35px;
+    }
+    .included-fish .fish {
+        margin-top: 15px;
+    }
+    .included-fish .fish h2 {
+        font-size: 35px;
+    }
+
+    .readmore {
+        margin-left: 2px;
+        font-size: 15px;
+        width: fit-content;
+    }
+
+    .photohorizontal1 {
+        display: none;
+    }
+}
+
+/* ----------------------------------------------
+  Generated by AnimatiSS
+  Licensed under FreeBSD License
+  URL: https://xsgames.co/animatiss
+  Twitter: @xsgames_
+---------------------------------------------- */
+@keyframes blur-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}

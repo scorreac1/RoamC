@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Italianno&display=swap');
+
+
+:root {
+    --strong-blue: #00BCD4;
+    --yellow: #FFD700;
+    --bone-white: #F5F5F5;
+    --red-wine: #7A2F34;
+    --dark-green: #9D9E6B;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+    /* PARA EL TITULO ---- font-family: 'Italianno', cursive; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bone-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s all;
+}
+
+.sign-in-container {
+    display: flex;
+    background-color: var(--bone-white);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    position: relative;
+}
+
+.close-tab {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.or {
+    color: #000;
+    background: linear-gradient(to right, var(--bone-white) 50%, var(--dark-green) 50%);
+    position: absolute;
+    right: 48.25%;
+    align-self: center;
+    z-index: 100;
+}
+
+.sign-in-container .form-container .container {
+    padding: 20px;
+    margin-top: 5px;
+    background-color: var(--bone-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in-container .form-container .container input {
+    margin-top: 3px;
+    margin-bottom: 10px;
+    background-color: var(--bone-white);
+} 
+
+.sign-in-container .form-container .container .cancelbtn{
+    background: var(--dark-green);
+    color: var(--bone-white);
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sign-in-container .form-container .container .cancelbtn:hover{
+    background: #FF0000;
+}
+
+.sign-in-container .form-container .container .loginbtn:hover{
+    background: var(--strong-blue);
+}
+
+.form-container {
+    width: 300px;
+    border-right: 1px solid #000;
+}
+
+form .container {
+    margin: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.sign-in-container .form-container .container .check-container {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    align-content: left;
+}
+
+.reme-checkbox {
+    width: 16px;
+    height: 16px;    
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--dark-green);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 80%;
+}
+
+
+.social-login {
+    width: 300px;
+    background-color: var(--dark-green);
+    color: var(--bone-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+}
+
+.social-login .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    position: absolute;
+    transform: translate(0, 50%);
+}
+
+.social-login h2 {
+    margin: 0;
+}
+
+.sign-in-container .social-login a:hover {
+    opacity: 80%;
+}
+
+#google-sign-in{
+    background-color: #EA4335;
+    /* color: linear-gradient(-120deg, #4285F4, #34A853, #FBBC05, #EA4335); */
+}
+
+#facebook-sign-in {
+    background-color: #4267b3;
+}
+
+#linkedin-sign-in {
+    background-color: #000;
+}
+
+.social-login .navbar a {
+    margin: 10px auto;
+    color: var(--bone-white);
+    text-align: center;
+    border: none;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+
+/* ------------- Large Monitor ------------- */
+@media (min-width: 2500px) {
+    body {
+        scale: 3;
+    }
+}
+
+
+/* ------------- tablet or phone------------- */
+@media (max-width: 768px) {
+    .sign-in-container {
+        flex-direction: column;
+    }
+
+    .sign-in-container .form-container {
+        height: 100%;
+        border-right: none;
+        border-bottom: 2px solid #000;
+    }
+
+    .sign-in-container .social-login {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        
+    }
+
+    .or {display: none;}
+
+}

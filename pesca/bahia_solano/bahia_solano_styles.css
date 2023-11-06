@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Italianno&display=swap');
+
+
+:root {
+    --strong-blue: #00BCD4;
+    --yellow: #FFD700;
+    --bone-white: #F5F5F5;
+    --red-wine: #7A2F34;
+    --dark-green: #9D9E6B;
+}
+
+* {
+    width: 100vw;
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), 
+    url('img/background_bahiasolano.jpeg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+h1 {
+    color: var(--yellow);
+    padding: 30px;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Poppins', cursive;
+}
+
+h2 {
+    margin: 0px 0px;
+    text-align: center;
+    font-family: 'Poppins', cursive;
+    font-size: 50px;
+    color: var(--yellow);
+}
+
+h3 {
+    font-family: 'Italianno', cursive;
+    font-size: 50px;
+    color: var(--yellow);
+    margin-left: 30px;
+}
+
+.info-mapa {
+    width: 90%;
+    margin: 5%;
+    color: var(--bone-white);
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.iframe-map-container {
+    width: 35%;
+}
+.google-map-bahia-solano {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    left: 0;
+    top: 0;
+}
+
+.texto-bahia {
+    width: 50%;
+}
+
+.big-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    margin: 5% 5% 0% 5%;
+    display: inline-flex;
+    justify-content: space-around;
+} 
+
+.left-container {
+    min-height: 80vh;
+    width: 45%;
+    text-decoration: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-image: url('img/whale-jumping.jpeg');
+    background-size: cover; /* Adjust as needed */
+    background-position-x: 65%; /* Adjust as needed */
+    transition: 1s;
+    border: 2px solid var(--strong-blue);
+}
+
+.right-container {
+    width: 45%;
+    text-decoration: none;
+    border-radius: 25px;
+    background-image: url('img/fishing.jpeg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    cursor: pointer;
+    transition: 1s;
+    border: 2px solid var(--strong-blue);
+}
+
+.left-container:hover {
+    animation:blur-in 0.5s linear both;
+    transform: scale(1.1);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 4px solid var(--yellow);
+} 
+
+
+.right-container:hover {
+    animation:blur-in 0.5s linear both;
+    transform: scale(1.1);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 4px solid var(--yellow);
+
+}
+
+.second-container {
+    width: 90%;
+    margin: 5%;
+    display: inline-flex;
+    justify-content: space-around;
+} 
+
+.second-container .left-container {
+    background-image: url('img/bird-watching.jpg');
+    background-position-x: 20%;
+}
+
+.second-container .right-container {
+    background-image: url('img/gorgona-diving.jpeg');
+    
+}
+
+.lodging {
+    width: 85%;
+    margin: 5% 5% 0% 5%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    /* min-height: 80vh; */
+}
+
+.lodging .hotel {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    text-decoration: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-image: url('img/solana.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    transition: 1s;
+    border: 2px solid var(--strong-blue);
+}
+
+.hotel:hover {
+    animation:blur-in 0.5s linear both;
+    transform: scale(1.1);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 4px solid var(--yellow);
+}
+
+.readmore {
+    margin-left: 2px;
+    width: fit-content;
+    border: 3px solid var(--yellow);
+    background-color: var(--yellow);
+    color: #000000;
+}
+
+
+/* ------------- Large Monitor ------------- */
+@media (min-width: 2500px) {
+    h1 {
+        padding: 15px;
+        font-size: 300px;
+    }
+
+    h2 {
+        font-size: 200px;
+    }
+
+    h3 {
+        font-size: 150px;
+    }
+    .texto-bahia {
+        font-size: 40px;
+    }
+
+    .readmore {
+        margin-left: 2px;
+        font-size: 40px;
+        width: fit-content;
+    }
+}
+
+
+/* ------------- tablet ------------- */
+@media (max-width: 768px) {
+    h1 {
+        padding: 15px;
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .info-mapa {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .iframe-map-container {
+        width: 50%;
+        align-self: center;
+    }
+
+    .google-map-bahia-solano {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        left: 0;
+        top: 0;
+    }
+
+    .texto-bahia {
+        margin-top: 20px;
+        width: 100%;
+        font-size: 15px;
+        align-self: center;
+    }
+
+    .container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .left-container {
+        min-height: 30vh;
+        width: 65%;
+    }
+    
+    .right-container {
+        min-height: 30vh;
+        width: 65%;
+        margin-top: 10px;
+        margin-left: 35%;
+        background-position-y: 40%; /* Adjust as needed */
+    }
+
+    .second-container {
+        width: 90%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .readmore {
+        font-size: 10px;
+        width: fit-content;
+    }
+    
+    .lodging {
+        width: 90%;
+        margin: 5% 5% 0% 5%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        /* min-height: 80vh; */
+    }
+}
+
+/* ------------- cellphone ------------- */
+@media (max-width: 390px) {
+    h1 {
+        padding: 10px;
+        font-size: 35px;
+    }
+
+    .iframe-map-container {
+        width: 100%;
+        align-self: center;
+    }
+
+    .container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    } 
+    
+    .left-container {
+        min-height: 30vh;
+        width: 100%;
+        transition: 1s;
+    }
+    
+    .right-container {
+        min-height: 30vh;
+        width: 100%;
+        margin-left: 0px;
+        cursor: pointer;
+        transition: 1s;
+    }
+}
+
+/* ----------------------------------------------
+  Generated by AnimatiSS
+  Licensed under FreeBSD License
+  URL: https://xsgames.co/animatiss
+  Twitter: @xsgames_
+---------------------------------------------- */
+@keyframes blur-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}

@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Italianno&display=swap');
+
+/* variables */
+:root {
+    --strong-blue: #00BCD4;
+    --yellow: #FFD700;
+    --bone-white: #F5F5F5;
+    --red-wine: #7A2F34;
+    --dark-green: #9D9E6B;
+}
+
+* {
+    width: 100vw;
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+body {
+    background-color: var(--bone-white);
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.parallel-container {
+    width: 100vw;
+    display: inline-flex;
+    background-image: url('img/cocuy1.jpeg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+}
+
+.parallel-container .left-container{
+    width: 30%;
+    border-radius: 25px;
+}
+
+.parallel-container .left-container .info-container{
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 20px;
+    border: 5px solid var(--red-wine);
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.parallel-container .left-container a{
+    color: #000000;
+}
+
+.parallel-container .container{
+    margin: 50px;
+    opacity: 80%;
+    width: 55%;
+    border-radius: 40px;
+    border: 5px solid var(--red-wine);
+}
+
+
+.parallel-container .container form {
+    align-items: center;
+    width: 100%;
+    background: var(--bone-white);
+    padding: 60px 50px;
+    display: flex;
+    flex-flow: column;
+    border-radius: 25px;
+}
+
+input, select {
+    margin-bottom: 10px;
+    padding: 20px;
+    height: 50px;
+    width: 70%;
+    border: 2px solid var(--strong-blue);
+    border-radius: 30px;
+}
+
+input:hover, select:hover, textarea:hover {
+    border: 5px solid var(--yellow);
+}
+
+.parallel-container .container .form-class .checkbox-container {
+    width: 70%;
+    padding: 0px;
+    margin-left: 46px;
+    position: relative;
+}
+.parallel-container .container .form-class .checkbox-container .checkbox-notif {
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: 16px;
+    height: 16px;
+}
+
+label {
+    max-width: 70%;
+}
+
+.textarea-class {
+    margin-bottom: 10px;
+    padding: 10px 10px 60px 20px;
+    width: 70%;
+    border: 2px solid var(--strong-blue);
+    border-radius: 25px;
+
+}
+
+/* submitt button */
+.submitbtn {
+    margin-top: 10px;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.submitbtn:hover {
+    background-color: #45a049;
+}
+  
+
+/* ----------------------------------------------- */
+/* Moviles (Revisamos desde 768px o menos) */
+/* ----------------------------------------------- */
+
+@media (max-width: 768px) {
+    body {
+        background-color: var(--bone-white);
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+    
+    .parallel-container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('img/cocuy2.jpeg'); /* Replace 'your-image.jpg' with the path to your image */
+        background-size: cover; /* Adjust as needed */
+        background-position: center; /* Adjust as needed */
+    }
+    
+    .parallel-container .left-container{
+        width: 40%;
+    }
+
+    .parallel-container .left-container .info-container{
+        margin-left: 0px;
+        padding: 10px;
+        background: rgba(245, 245, 245, 0.5);
+    }
+    
+    .parallel-container .container{
+        margin: 50px;
+        opacity: 80%;
+        width: 90%;
+        border-radius: 40px;
+        border: 5px solid var(--red-wine);
+    }
+
+    .parallel-container .container .form-class .checkbox-container {
+        padding: 0px 10px 0px 0px;
+    }
+
+}
+
+@media (max-width: 390px) {
+    .parallel-container .container .form-class .checkbox-container {
+        padding: 0px 15px 0px 0px;
+    }    
+
+    .parallel-container .left-container{
+        width: 50%;
+    }
+    
+}
